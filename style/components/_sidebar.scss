@@ -1,0 +1,52 @@
+$sidebar-width: 280px;
+
+//預設手機版
+.sidebar {
+    width: $sidebar-width;
+    margin-left: -$sidebar-width;
+    transition: margin-left 0.25s;
+    //sidebar 連結樣式
+    .sidebar-link {
+        display: block;
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+        text-decoration: none;
+        color: $gray-900;
+        &:hover {
+            background-color: rgba(170, 0, 182, 0.16);
+        }
+    }
+}
+.main {
+    width: 100vw;
+}
+//手機版收合選單
+.expand {
+    .sidebar {
+        width: $sidebar-width;
+        margin-left: 0;
+    }
+    .main {
+        width: calc(100vw - #{$sidebar-width});
+    }
+}
+//電腦版樣式
+@include media-breakpoint-up(lg) {
+    .sidebar {
+        width: $sidebar-width;
+        margin-left: 0;
+    }
+    .main {
+        width: calc(100vw - #{$sidebar-width});
+    }
+    //電腦版收合選單
+    .expand {
+        .sidebar {
+            margin-left: -$sidebar-width;
+            transition: margin-left 0.25s;
+        }
+        .main {
+            width: 100vw;
+        }
+    }
+}
