@@ -12150,6 +12150,8 @@ textarea.form-control-lg {
   margin-left: -280px;
   -webkit-transition: margin-left 0.25s;
   transition: margin-left 0.25s;
+  position: fixed;
+  top: 0;
 }
 .sidebar .sidebar-link {
   display: block;
@@ -12186,6 +12188,7 @@ textarea.form-control-lg {
 }
 .expand .main {
   width: calc(100vw - 280px);
+  margin-left: 280px;
 }
 
 @media (min-width: 992px) {
@@ -12195,6 +12198,9 @@ textarea.form-control-lg {
   }
   .main {
     width: calc(100vw - 280px);
+    margin-left: 280px;
+    -webkit-transition: margin-left 0.25s;
+    transition: margin-left 0.25s;
   }
   .expand .sidebar {
     margin-left: -280px;
@@ -12203,5 +12209,6 @@ textarea.form-control-lg {
   }
   .expand .main {
     width: 100vw;
+    margin-left: 0;
   }
 }/*# sourceMappingURL=all.css.map */
