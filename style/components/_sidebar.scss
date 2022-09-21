@@ -1,5 +1,11 @@
 $sidebar-width: 280px;
 
+//解決mobile瀏覽器高度無法滿高
+.my-h-element {
+    height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+}
+
 //預設手機版
 .sidebar {
     width: $sidebar-width;
@@ -13,7 +19,7 @@ $sidebar-width: 280px;
         text-decoration: none;
         color: $gray-900;
         &:hover {
-            background-color: #ffe5b4;
+            background-color: #a6ffcc;
         }
     }
 }

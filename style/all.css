@@ -12140,6 +12140,11 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.my-h-element {
+  height: 100vh; /* Fallback for browsers that do not support Custom Properties */
+  height: calc(var(--vh, 1vh) * 100);
+}
+
 .sidebar {
   width: 280px;
   margin-left: -280px;
@@ -12154,7 +12159,7 @@ textarea.form-control-lg {
   color: #212529;
 }
 .sidebar .sidebar-link:hover {
-  background-color: #ffe5b4;
+  background-color: #a6ffcc;
 }
 
 .main {
