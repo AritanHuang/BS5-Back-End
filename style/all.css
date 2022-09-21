@@ -12159,7 +12159,21 @@ textarea.form-control-lg {
   color: #212529;
 }
 .sidebar .sidebar-link:hover {
-  background-color: #a6ffcc;
+  background-color: #ccccff;
+}
+.sidebar .menu .active {
+  position: relative;
+  color: #0d6efd !important;
+  background-color: #ccccff;
+}
+.sidebar .menu .active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2px;
+  height: 100%;
+  width: 3px;
+  background: #0d6efd;
 }
 
 .main {
