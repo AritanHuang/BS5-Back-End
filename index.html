@@ -18,7 +18,8 @@
                 <h1 class="h6">六角西餐廳 - <span class="fw-normal">後台管理</span></h1>
             </div>
             <ul class="list-unstyled overflow-auto menu">
-                <li><a href="#" class="sidebar-link px-4 border-3"><i class="bi bi-house-door me-3"></i>首頁</a></li>
+                <li class="active"><a href="#" class="sidebar-link px-4 border-3"><i
+                            class="bi bi-house-door me-3"></i>首頁</a></li>
                 <li>
                     <a href="#menu-list" data-bs-toggle="collapse" class="sidebar-link px-4">
                         <div class="d-flex justify-content-between">
@@ -79,7 +80,7 @@
                     </div>
                 </div>
                 <!-- 圖表區塊 -->
-                <div class="row gy-3">
+                <div class="row gy-3 mb-3">
                     <div class="col-lg-4">
                         <div class="card shadow-sm h-100">
                             <div class="card-body">
@@ -93,6 +94,79 @@
                                 <canvas id="bar-chart" class="img-fluid"></canvas>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <!-- 表格區塊 -->
+                <div class="card">
+                    <div class="card-header bg-transparent">
+                        <div class="input-group">
+                            <span class="input-group-text bg-transparent border-0">
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="search" class="form-control border-0 shadow-none">
+                        </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0 text-nowrap">
+                                <thead>
+                                    <tr class="align-middle">
+                                        <th scope="col" class="py-3 ps-4">訂單編號</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">用戶姓名</th>
+                                        <th scope="col">購買品項</th>
+                                        <th scope="col">付款狀態</th>
+                                        <th scope="col">購買金額</th>
+                                        <th scope="col" class="pe-4">編輯</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td scope="row" class="ps-4">TX123456789</td>
+                                        <td>ab1234@email.com</td>
+                                        <td>
+                                            卡小伯
+                                        </td>
+                                        <td>六角西餐：大麥克全家餐</td>
+                                        <td>
+                                            <div class="text-muted">尚未付款</div>
+                                        </td>
+                                        <td class="text-end">900</td>
+                                        <td class="text-end pe-4">
+                                            <a href="#" class="btn btn-sm btn-outline-dark me-2">
+                                                編輯 <i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="ps-4">TX123456789</td>
+                                        <td>ab1234@email.com</td>
+                                        <td>
+                                            卡小伯
+                                        </td>
+                                        <td>六角西餐：大麥克全家餐</td>
+                                        <td>
+                                            <div class="text-muted">尚未付款</div>
+                                        </td>
+                                        <td class="text-end">900</td>
+                                        <td class="text-end pe-4">
+                                            <a href="#" class="btn btn-sm btn-outline-dark me-2">
+                                                編輯 <i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end">
+                                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
