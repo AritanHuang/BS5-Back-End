@@ -107,3 +107,4 @@ $(document).ready(function () {
     const pieChart = new Chart(pieCtx, config);
     const barChart = new Chart(barCtx, barConfig);
 })();
+
