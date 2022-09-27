@@ -13,7 +13,7 @@ $(document).ready(function () {
     });
     //按著選單後加上樣式
     $('.menu li').click(function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         $(this).addClass('active').siblings().removeClass('active');
     });
 });
