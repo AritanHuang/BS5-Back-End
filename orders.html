@@ -74,6 +74,17 @@
                 <div class="card">
                     <div class="card-header bg-transparent">
                         <div class="input-group">
+                            <div class="dropdown">
+                                <button class="btn btn-sm btn-outline-dark dropdown-toggle" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    操作
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
                             <span class="input-group-text bg-transparent border-0">
                                 <i class="bi bi-search"></i>
                             </span>
@@ -85,7 +96,8 @@
                             <table class="table table-hover mb-0 text-nowrap">
                                 <thead>
                                     <tr class="align-middle">
-                                        <th scope="col" class="py-3 ps-4">訂單編號</th>
+                                        <th scope="col" class="ps-4"></th>
+                                        <th scope="col" class="py-3">訂單編號</th>
                                         <th scope="col">Email</th>
                                         <th scope="col">用戶姓名</th>
                                         <th scope="col">購買品項</th>
@@ -96,7 +108,9 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td scope="row" class="ps-4">TX123456789</td>
+                                        <td scope="row" class="ps-4"><input type="checkbox" class="form-check-input">
+                                        </td>
+                                        <td scope="row">TX123456789</td>
                                         <td>ab1234@email.com</td>
                                         <td>
                                             卡小伯
@@ -107,12 +121,25 @@
                                         </td>
                                         <td class="text-end">900</td>
                                         <td class="text-end pe-4">
-                                            <a href="#" class="btn btn-sm btn-outline-dark me-2">
-                                                編輯 <i class="bi bi-pen"></i></a>
+                                            <div class="btn-group">
+                                                <a href="#" class="btn btn-sm btn-outline-dark">
+                                                    編輯 <i class="bi bi-pen"></i></a>
+                                                <button class="btn btn-sm btn-outline-dark dropdown-toggle"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    操作
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">修改狀態</a></li>
+                                                    <li><a class="dropdown-item link-danger" href="#">刪除訂單</a></li>
+                                                </ul>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td scope="row" class="ps-4">TX123456789</td>
+                                        <td scope="row" class="ps-4"><input type="checkbox" class="form-check-input">
+                                        </td>
+                                        <td scope="row">TX123456789</td>
                                         <td>ab1234@email.com</td>
                                         <td>
                                             卡小伯
@@ -123,15 +150,113 @@
                                         </td>
                                         <td class="text-end">900</td>
                                         <td class="text-end pe-4">
-                                            <a href="#" class="btn btn-sm btn-outline-dark me-2">
-                                                編輯 <i class="bi bi-pen"></i></a>
+                                            <div class="btn-group">
+                                                <a href="#" class="btn btn-sm btn-outline-dark">
+                                                    編輯 <i class="bi bi-pen"></i></a>
+                                                <button class="btn btn-sm btn-outline-dark dropdown-toggle"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    操作
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">修改狀態</a></li>
+                                                    <li><a class="dropdown-item link-danger" href="#">刪除訂單</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="ps-4"><input type="checkbox" class="form-check-input">
+                                        </td>
+                                        <td scope="row">TX123456789</td>
+                                        <td>ab1234@email.com</td>
+                                        <td>
+                                            卡小伯
+                                        </td>
+                                        <td>六角西餐：大麥克全家餐</td>
+                                        <td>
+                                            <div class="text-muted">尚未付款</div>
+                                        </td>
+                                        <td class="text-end">900</td>
+                                        <td class="text-end pe-4">
+                                            <div class="btn-group">
+                                                <a href="#" class="btn btn-sm btn-outline-dark">
+                                                    編輯 <i class="bi bi-pen"></i></a>
+                                                <button class="btn btn-sm btn-outline-dark dropdown-toggle"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    操作
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">修改狀態</a></li>
+                                                    <li><a class="dropdown-item link-danger" href="#">刪除訂單</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="ps-4"><input type="checkbox" class="form-check-input">
+                                        </td>
+                                        <td scope="row">TX123456789</td>
+                                        <td>ab1234@email.com</td>
+                                        <td>
+                                            卡小伯
+                                        </td>
+                                        <td>六角西餐：大麥克全家餐</td>
+                                        <td>
+                                            <div class="text-muted">尚未付款</div>
+                                        </td>
+                                        <td class="text-end">900</td>
+                                        <td class="text-end pe-4">
+                                            <div class="btn-group">
+                                                <a href="#" class="btn btn-sm btn-outline-dark">
+                                                    編輯 <i class="bi bi-pen"></i></a>
+                                                <button class="btn btn-sm btn-outline-dark dropdown-toggle"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    操作
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">修改狀態</a></li>
+                                                    <li><a class="dropdown-item link-danger" href="#">刪除訂單</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td scope="row" class="ps-4"><input type="checkbox" class="form-check-input">
+                                        </td>
+                                        <td scope="row">TX123456789</td>
+                                        <td>ab1234@email.com</td>
+                                        <td>
+                                            卡小伯
+                                        </td>
+                                        <td>六角西餐：大麥克全家餐</td>
+                                        <td>
+                                            <div class="text-muted">尚未付款</div>
+                                        </td>
+                                        <td class="text-end">900</td>
+                                        <td class="text-end pe-4">
+                                            <div class="btn-group">
+                                                <a href="#" class="btn btn-sm btn-outline-dark">
+                                                    編輯 <i class="bi bi-pen"></i></a>
+                                                <button class="btn btn-sm btn-outline-dark dropdown-toggle"
+                                                    type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    操作
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">修改狀態</a></li>
+                                                    <li><a class="dropdown-item link-danger" href="#">刪除訂單</a></li>
+                                                </ul>
+                                            </div>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
-                    <div class="card-footer bg-transparent">
+                    <div class="card-footer bg-transparent pt-4">
                         <nav aria-label="Page navigation example">
                             <ul class="pagination justify-content-end">
                                 <li class="page-item"><a class="page-link" href="#">Previous</a></li>
