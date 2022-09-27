@@ -12163,12 +12163,12 @@ textarea.form-control-lg {
 .sidebar .sidebar-link:hover {
   background-color: #ccccff;
 }
-.sidebar .menu .active {
+.sidebar .active > .sidebar-link {
   position: relative;
   color: #0d6efd !important;
   background-color: #ccccff;
 }
-.sidebar .menu .active::before {
+.sidebar .active > .sidebar-link::before {
   content: "";
   position: absolute;
   top: 0;
