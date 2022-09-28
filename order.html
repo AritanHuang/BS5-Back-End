@@ -86,7 +86,7 @@
                             </div>
                         </div>
                         <!-- 表單卡片 -->
-                        <div class="card">
+                        <div class="card mb-3">
                             <div class="card-header">
                                 購買品項
                             </div>
@@ -216,6 +216,40 @@
                             </div>
                         </div>
                         <!-- 發票管理卡片 -->
+                        <div class="card mb-3">
+                            <div class="card-header">發票管理</div>
+                            <div class="card-body">
+                                <div class="row mb-3">
+                                    <label for="invoice-type" class="col-form-label col-sm-2">發票類型</label>
+                                    <div class="col-sm-10">
+                                        <select name="invoice-type" id="invoice-type" class="form-select">
+                                            <option value="personal-invoice">個人發票</option>
+                                            <option value="triple-invoice">營業人三聯式發票</option>
+                                            <option value="donation-invoice">捐贈發票</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-2">
+                                        <label for="tax-id" class="col-form-label">統一編號</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="tax-id" value="44223311">
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-sm-2">
+                                        <label for="company-name" class="col-form-label">公司名稱</label>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" id="company-name" value="六角西餐廳">
+                                    </div>
+                                </div>
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-outline-primary">更新資訊</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
